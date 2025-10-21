@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="greenharvest" content="greenharvest" />
     <title>GreenHarvest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Roboto:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- #region header-->
     <header>
       <nav>
-        <a href="./index.html">GreenHarvest</a>
+        <a href="./index.html">
+          <img src="./images/logo1.png" alt="logo" />
+          <img src="./images/logo2.png" alt="logo" />
+        </a>
         <ul>
-          <li><a href="#How-it-works">How It Works</a></li>
+          <li><a href="#How-it-works-title">How It Works</a></li>
           <li><a href="#vegetables">Vegetables</a></li>
           <li><a href="#reviews">Reviews</a></li>
         </ul>
@@ -21,7 +33,7 @@
     <!-- #endregion header-->
     <main>
       <!-- #region hero-->
-      <section>
+      <section class="hero">
         <h1>Organic vegetables to your diet today!</h1>
         <p>
           Our expertly curated vegetable baskets are made with the freshest,
@@ -39,15 +51,18 @@
       <!-- #endregion hero-->
 
       <!-- #region How it works-->
-      <section>
-        <h2 id="How-it-works">Order vegetables</h2>
+      <section class="How-it-works-section">
+        <h2 id="How-it-works-title">Order vegetables</h2>
         <img
           src="./images/cooking.jpg"
           alt="woman is cooking"
           width="440"
           height="560"
         />
-        <p>To order your vegetable basket, simply follow these easy steps</p>
+        <h3>
+          To order your <span class="HW-blush">vegetable</span> basket, simply
+          follow these <span class="HW-blush">easy steps</span>
+        </h3>
         <p>
           Our baskets are assembled with care and delivered straight to your
           doorstep, so you can enjoy the taste of fresh fruit without ever
@@ -55,20 +70,25 @@
         </p>
         <ul>
           <li>
-            <p>1</p>
+            <p style="color: #fbfbfb">1</p>
             <p>
-              Just choose the vegetable you want to order by clicking on the
-              checkboxes next to it.
+              Just choose <span class="HW-black">the vegetable</span> you want
+              to order by clicking on the checkboxes
+              <span class="HW-black"> next to it.</span>
             </p>
           </li>
           <li>
-            <p>2</p>
-            <p>Click on the basket and fill out the form.</p>
+            <p style="color: #fbfbfb">2</p>
+            <p>
+              Click on <span class="HW-black">the basket</span> and fill out the
+              form.
+            </p>
           </li>
           <li>
-            <p>3</p>
+            <p style="color: #fbfbfb">3</p>
             <p>
-              Sit back and relax! Your fresh vegetables basket will be
+              Sit back and relax! Your
+              <span class="HW-black">fresh vegetables </span>basket will be
               delivered.
             </p>
           </li>
@@ -77,24 +97,29 @@
       <!-- #endregion How it works-->
 
       <!-- #region discount-->
-      <section>
+      <section class="Discount">
         <h2>Discount</h2>
-        <p>Discount up to 40%! Taste the vitamins and keep your health</p>
+        <p>
+          <span class="Discount-text"> Discount up to 40%! </span>Taste the
+          vitamins and keep your health
+        </p>
       </section>
       <!-- #endregion discount-->
 
       <!-- #region vegetables-->
-      <section>
-        <h2 id="vegetables">Organic vegetables</h2>
-        <p>
+      <section class="vegetable-section">
+        <h2 id="vegetables">
+          Organic <span class="HW-blush">vegetables</span>
+        </h2>
+        <p class="vegetable-text">
           Our organic vegetables are hand-picked from local farms and delivered
           straight to your doorstep, ensuring that you get the freshest and most
           nutritious produce possible.
         </p>
         <ul>
           <li>
-            <p>eggplant</p>
-            <p>60 USD / kg</p>
+            <p class="vegetable-name">eggplant</p>
+            <p class="vegetable-price">60 USD / kg</p>
             <img
               src="./images/eggplant.png"
               alt="eggplant"
@@ -103,13 +128,13 @@
             />
           </li>
           <li>
-            <p>leek</p>
-            <p>50 USD / kg</p>
+            <p class="vegetable-name">leek</p>
+            <p class="vegetable-price">50 USD / kg</p>
             <img src="./images/leek.png" alt="leek" width="280" height="244" />
           </li>
           <li>
-            <p>mushrooms</p>
-            <p>40 USD / kg</p>
+            <p class="vegetable-name">mushrooms</p>
+            <p class="vegetable-price">40 USD / kg</p>
             <img
               src="./images/mushrooms.png"
               alt="mushrooms"
@@ -118,13 +143,13 @@
             />
           </li>
           <li>
-            <p>corn</p>
-            <p>40 USD / kg</p>
+            <p class="vegetable-name">corn</p>
+            <p class="vegetable-price">40 USD / kg</p>
             <img src="./images/corn.png" alt="corn" width="280" height="244" />
           </li>
           <li>
-            <p>sweet potatoes</p>
-            <p>40 USD / kg</p>
+            <p class="vegetable-name">sweet potatoes</p>
+            <p class="vegetable-price">40 USD / kg</p>
             <img
               src="./images/sweet-potatoes.png"
               alt="sweet potatoes"
@@ -133,8 +158,8 @@
             />
           </li>
           <li>
-            <p>carrot</p>
-            <p>40 USD / kg</p>
+            <p class="vegetable-name">carrot</p>
+            <p class="vegetable-price">40 USD / kg</p>
             <img
               src="./images/carrot.png"
               alt="carrot"
@@ -147,9 +172,11 @@
       <!-- #endregion vegetables-->
 
       <!-- #region reviews-->
-      <section>
-        <h2 id="reviews">Reviews from our customers</h2>
-        <p>
+      <section class="reviews-section">
+        <h2 id="reviews">
+          Reviews from our <span class="reviews-green">customers</span>
+        </h2>
+        <p class="reviews-text">
           Words of our customers: impressions and opinions about the quality of
           our services and the freshness of our products.
         </p>
@@ -201,17 +228,20 @@
       <!-- #endregion reviews-->
 
       <!-- #region your order-->
-      <section>
-        <h2>Fresh Harvest Box has got you covered</h2>
+      <section class="order">
+        <h2>
+          Fresh <span class="HW-blush">Harvest</span> Box has got you covered
+        </h2>
         <p>
           Our boxes are packed with delicious, nutritious vegetables, perfect
           for anyone looking to eat healthier or support local farmers. Order
           your box today and start enjoying the best that nature has to offer!
         </p>
-        <p>
-          Ordering from us is quick and easy! Fill out the form below and we
-          will contact you !
-        </p>
+        <h3>
+          Ordering <span class="order-chianti">from us</span> is quick and easy!
+          Fill out <span class="reviews-green">the form</span> below and we will
+          contact you !
+        </h3>
 
         Full Name<br />
         Email<br />
@@ -222,7 +252,7 @@
       <!-- #endregion your order-->
 
       <!-- #region social network-->
-      <section>
+      <section class="social">
         <img
           src="./images/fresh_juice.jpg"
           alt="fresh_juice"
@@ -230,13 +260,11 @@
           height="352"
         />
         <p>Follow us on our social networks:</p>
-        <ul>
-          <li>
-            <a href="./index.html">Instagram</a>
-          </li>
-          <li>/</li>
+        <ul class="social-list">
+          <li><a href="./index.html">Instagram</a></li>
+          <li style="color: #fbfbfb">/</li>
           <li><a href="./index.html">Facebook</a></li>
-          <li>/</li>
+          <li style="color: #fbfbfb">/</li>
           <li><a href="./index.html">Youtube</a></li>
         </ul>
       </section>
@@ -244,27 +272,30 @@
     </main>
     <!-- #region footer-->
     <footer>
-      <a href="./index.html">GreenHarvest</a>
-      <p>
+      <a href="./index.html">
+        <img src="./images/logo1.png" alt="logo" />
+        <img src="./images/logo2.png" alt="logo" />
+      </a>
+      <p class="footer-text">
         Whether you're looking for a healthy snack or a thoughtful gift, our
         fruit baskets are the perfect choice.
       </p>
-      <ul>
+      <ul class="footer-menu">
         <li><a href="#How-it-works">How It Works</a></li>
         <li><a href="#vegetables">Vegetables</a></li>
         <li><a href="#reviews">Reviews</a></li>
       </ul>
-      <address>
-        <a href="tel:+380684439426">+380 (68) 443-94-26</a><br />
+      <address class="footer-contacts">
+        +380 (68) 443-94-26<br />
         1678 S. Pioneer Road Salt <br />
         Lake City UT 84104
       </address>
-      <ul>
+      <ul class="footer-end">
         <li>Privacy Policy</li>
         <li>/</li>
         <li>Cookie settings</li>
       </ul>
-      <p>&#xa9;Green Harvest 2023</p>
+      <p class="footer-end">&#xa9;Green Harvest 2023</p>
     </footer>
     <!-- #endregion footer-->
   </body>
