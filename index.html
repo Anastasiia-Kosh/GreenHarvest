@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="greenharvest" content="greenharvest" />
-    <title>GreenHarvest</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,22 +11,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>GreenHarvest</title>
   </head>
   <body>
     <!-- #region header-->
     <header>
-      <nav>
-        <a href="./index.html">
-          <img src="./images/logo1.png" alt="logo" />
-          <img src="./images/logo2.png" alt="logo" />
-        </a>
-        <ul>
-          <li><a href="#How-it-works-title">How It Works</a></li>
-          <li><a href="#vegetables">Vegetables</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-        </ul>
-        <button type="button">Shop now</button>
-      </nav>
+      <div class="container">
+        <nav>
+          <div class="title-navigation">
+            <a class="title-logo" href="./index.html">
+              <img
+                class="first-part-logo"
+                src="./images/logo1.png"
+                alt="logo"
+              />
+              <img
+                class="second-part-logo"
+                src="./images/logo2.png"
+                alt="logo"
+              />
+            </a>
+
+            <ul class="nav-menu-wrapper">
+              <li class="nav-menu">
+                <a href="#how-it-works-title">How It Works</a>
+              </li>
+              <li class="nav-menu"><a href="#vegetables">Vegetables</a></li>
+              <li class="nav-menu"><a href="#reviews">Reviews</a></li>
+            </ul>
+
+            <button class="nav-btn" type="button">Shop now</button>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- #endregion header-->
     <main>
@@ -51,8 +66,8 @@
       <!-- #endregion hero-->
 
       <!-- #region How it works-->
-      <section class="How-it-works-section">
-        <h2 id="How-it-works-title">Order vegetables</h2>
+      <section class="how-it-works-section">
+        <h2 id="how-it-works-title">Order vegetables</h2>
         <img
           src="./images/cooking.jpg"
           alt="woman is cooking"
@@ -60,8 +75,8 @@
           height="560"
         />
         <h3>
-          To order your <span class="HW-blush">vegetable</span> basket, simply
-          follow these <span class="HW-blush">easy steps</span>
+          To order your <span class="hw-blush">vegetable</span> basket, simply
+          follow these <span class="hw-blush">easy steps</span>
         </h3>
         <p>
           Our baskets are assembled with care and delivered straight to your
@@ -72,15 +87,15 @@
           <li>
             <p style="color: #fbfbfb">1</p>
             <p>
-              Just choose <span class="HW-black">the vegetable</span> you want
+              Just choose <span class="hw-black">the vegetable</span> you want
               to order by clicking on the checkboxes
-              <span class="HW-black"> next to it.</span>
+              <span class="hw-black"> next to it.</span>
             </p>
           </li>
           <li>
             <p style="color: #fbfbfb">2</p>
             <p>
-              Click on <span class="HW-black">the basket</span> and fill out the
+              Click on <span class="hw-black">the basket</span> and fill out the
               form.
             </p>
           </li>
@@ -88,7 +103,7 @@
             <p style="color: #fbfbfb">3</p>
             <p>
               Sit back and relax! Your
-              <span class="HW-black">fresh vegetables </span>basket will be
+              <span class="hw-black">fresh vegetables </span>basket will be
               delivered.
             </p>
           </li>
@@ -97,10 +112,10 @@
       <!-- #endregion How it works-->
 
       <!-- #region discount-->
-      <section class="Discount">
+      <section class="discount">
         <h2>Discount</h2>
         <p>
-          <span class="Discount-text"> Discount up to 40%! </span>Taste the
+          <span class="discount-text"> Discount up to 40%! </span>Taste the
           vitamins and keep your health
         </p>
       </section>
@@ -108,64 +123,92 @@
 
       <!-- #region vegetables-->
       <section class="vegetable-section">
-        <h2 id="vegetables">
-          Organic <span class="HW-blush">vegetables</span>
-        </h2>
-        <p class="vegetable-text">
-          Our organic vegetables are hand-picked from local farms and delivered
-          straight to your doorstep, ensuring that you get the freshest and most
-          nutritious produce possible.
-        </p>
-        <ul>
+        <div class="vegetable-title">
+          <h2 id="vegetables">
+            Organic
+            <span class="hw-blush">
+              <br />
+              vegetables</span
+            >
+          </h2>
+          <p class="vegetable-text">
+            Our organic vegetables are hand-picked from local farms and
+            delivered straight to your <br />doorstep, ensuring that you get the
+            freshest and most nutritious produce possible.
+          </p>
+        </div>
+        <ul class="vegetable-card-conteiner">
           <li>
-            <p class="vegetable-name">eggplant</p>
-            <p class="vegetable-price">60 USD / kg</p>
-            <img
-              src="./images/eggplant.png"
-              alt="eggplant"
-              width="280"
-              height="244"
-            />
+            <div class="vegetable-card">
+              <p class="vegetable-name">eggplant</p>
+              <p class="vegetable-price">60 USD / kg</p>
+              <img
+                src="./images/eggplant.png"
+                alt="eggplant"
+                width="280"
+                height="244"
+              />
+            </div>
           </li>
           <li>
-            <p class="vegetable-name">leek</p>
-            <p class="vegetable-price">50 USD / kg</p>
-            <img src="./images/leek.png" alt="leek" width="280" height="244" />
+            <div class="vegetable-card">
+              <p class="vegetable-name">leek</p>
+              <p class="vegetable-price">50 USD / kg</p>
+              <img
+                src="./images/leek.png"
+                alt="leek"
+                width="280"
+                height="244"
+              />
+            </div>
           </li>
           <li>
-            <p class="vegetable-name">mushrooms</p>
-            <p class="vegetable-price">40 USD / kg</p>
-            <img
-              src="./images/mushrooms.png"
-              alt="mushrooms"
-              width="280"
-              height="244"
-            />
+            <div class="vegetable-card">
+              <p class="vegetable-name">mushrooms</p>
+              <p class="vegetable-price">40 USD / kg</p>
+              <img
+                src="./images/mushrooms.png"
+                alt="mushrooms"
+                width="280"
+                height="244"
+              />
+            </div>
           </li>
           <li>
-            <p class="vegetable-name">corn</p>
-            <p class="vegetable-price">40 USD / kg</p>
-            <img src="./images/corn.png" alt="corn" width="280" height="244" />
+            <div class="vegetable-card">
+              <p class="vegetable-name">corn</p>
+              <p class="vegetable-price">40 USD / kg</p>
+              <img
+                src="./images/corn.png"
+                alt="corn"
+                width="280"
+                height="244"
+              />
+            </div>
           </li>
           <li>
-            <p class="vegetable-name">sweet potatoes</p>
-            <p class="vegetable-price">40 USD / kg</p>
-            <img
-              src="./images/sweet-potatoes.png"
-              alt="sweet potatoes"
-              width="280"
-              height="244"
-            />
+            <div class="vegetable-card">
+              <p class="vegetable-name">sweet potatoes</p>
+              <p class="vegetable-price">40 USD / kg</p>
+              <img
+                src="./images/sweet-potatoes.png"
+                alt="sweet potatoes"
+                width="280"
+                height="244"
+              />
+            </div>
           </li>
           <li>
-            <p class="vegetable-name">carrot</p>
-            <p class="vegetable-price">40 USD / kg</p>
-            <img
-              src="./images/carrot.png"
-              alt="carrot"
-              width="280"
-              height="244"
-            />
+            <div class="vegetable-card">
+              <p class="vegetable-name">carrot</p>
+              <p class="vegetable-price">40 USD / kg</p>
+              <img
+                src="./images/carrot.png"
+                alt="carrot"
+                width="280"
+                height="244"
+              />
+            </div>
           </li>
         </ul>
       </section>
@@ -230,7 +273,7 @@
       <!-- #region your order-->
       <section class="order">
         <h2>
-          Fresh <span class="HW-blush">Harvest</span> Box has got you covered
+          Fresh <span class="hw-blush">Harvest</span> Box has got you covered
         </h2>
         <p>
           Our boxes are packed with delicious, nutritious vegetables, perfect
@@ -281,7 +324,7 @@
         fruit baskets are the perfect choice.
       </p>
       <ul class="footer-menu">
-        <li><a href="#How-it-works">How It Works</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#vegetables">Vegetables</a></li>
         <li><a href="#reviews">Reviews</a></li>
       </ul>

@@ -1,10 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+img {
+  display: block;
+}
+
 body {
   font-family: "Inter Tight", "Roboto", sans-serif;
   font-weight: 600;
 }
-ul {
-  list-style-type: none;
-}
+
 a {
   text-decoration: none;
 }
@@ -14,7 +42,7 @@ header {
 .hero {
   background-color: #576f35;
 }
-.How-it-works-section {
+.how-it-works-section {
   background-color: #576f35;
 }
 .order {
@@ -34,7 +62,24 @@ header ul a {
   text-align: center;
   color: #fbfbfb;
 }
-header button {
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.nav-menu {
+  min-width: 83px;
+  height: 24px;
+  border-radius: 12px;
+  border: 1px solid #fbfbfb;
+  padding: 12px;
+  text-align: center;
+}
+.nav-btn {
+  min-width: 157px;
+  height: 52px;
+  border-radius: 30px;
   font-weight: 600;
   font-size: 18px;
   /* line-height: 20px; */
@@ -43,8 +88,37 @@ header button {
   text-transform: uppercase;
   color: #fbfbfb;
   background-color: #7a3145;
+  padding: 12px;
+  text-align: center;
+  border-style: none;
+}
+.nav-menu-wrapper {
+  display: flex;
+  gap: 8px;
+  padding-top: 36px;
+}
+.title-navigation {
+  display: flex;
+}
+.title-logo {
+  display: flex;
+  padding-left: 100px;
+  padding-top: 48px;
+  padding-right: 366px;
+  justify-content: space-between;
+  align-items: center;
+  width: 216px;
+  height: 20px;
 }
 
+.first-part-logo {
+  width: 20px;
+  height: 20px;
+}
+.second-part-logo {
+  width: 186.67px;
+  height: 16.6px;
+}
 .hero h1 {
   font-size: 76px;
   /* line-height: 76px; */
@@ -60,7 +134,7 @@ header button {
   line-height: 1.25;
   color: #fbfbfb;
 }
-.How-it-works-section h3 {
+.how-it-works-section h3 {
   font-size: 32px;
   /* line-height: 32px; */
   line-height: 1;
@@ -68,27 +142,27 @@ header button {
   text-transform: uppercase;
   color: #fbfbfb;
 }
-.How-it-works-section p {
+.how-it-works-section p {
   font-weight: 500;
   font-size: 16px;
   /* line-height: 20px; */
   line-height: 1.25;
   color: #fbfbfb;
 }
-.HW-blush {
+.hw-blush {
   color: #d4bfc4;
 }
-.How-it-works-section ul p {
+.how-it-works-section ul p {
   font-weight: 500;
   font-size: 16px;
   /* line-height: 20px; */
   line-height: 1.25;
   color: #858585;
 }
-.How-it-works-section .HW-black {
+.how-it-works-section .hw-black {
   color: #141414;
 }
-.Discount {
+.discount {
   font-size: 76px;
   /* line-height: 76px; */
   line-height: 1;
@@ -96,7 +170,7 @@ header button {
   text-transform: uppercase;
   color: #141414;
 }
-.Discount .Discount-text {
+.discount .discount-text {
   color: #fbfbfb;
   background-color: #576f35;
 }
@@ -244,4 +318,27 @@ footer .footer-contacts {
   /* line-height: 20px; */
   line-height: 1.25;
   color: #d4bfc4;
+}
+.vegetable-card {
+  width: 344px;
+  height: 380px;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  padding: 32px;
+}
+
+.vegetable-title {
+  border: 5px solid #f44336;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  height: 192px;
+  margin: 0;
+}
+.vegetable-card-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
