@@ -17,21 +17,22 @@
     <!-- #region header-->
     <header>
       <div class="container">
-        <nav>
+        <nav class="navigation">
           <div class="title-navigation">
-            <a class="title-logo" href="./index.html">
-              <img
-                class="first-part-logo"
-                src="./images/logo1.png"
-                alt="logo"
-              />
-              <img
-                class="second-part-logo"
-                src="./images/logo2.png"
-                alt="logo"
-              />
-            </a>
-
+            <div class="title-navigation-logo">
+              <a class="title-logo" href="./index.html">
+                <img
+                  class="first-part-logo"
+                  src="./images/logo1.png"
+                  alt="logo"
+                />
+                <img
+                  class="second-part-logo"
+                  src="./images/logo2.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
             <ul class="nav-menu-wrapper">
               <li class="nav-menu">
                 <a href="#how-it-works-title">How It Works</a>
@@ -49,97 +50,114 @@
     <main>
       <!-- #region hero-->
       <section class="hero">
-        <h1>Organic vegetables to your diet today!</h1>
-        <p>
-          Our expertly curated vegetable baskets are made with the freshest,
-          highest quality vegetables available. Fresh Harvest Box has got you
-          covered. Fresh, high-quality vegetables in expertly curated vegetable
-          baskets delivered to you.
-        </p>
-        <img
-          src="./images/vegetables.jpg"
-          alt="vegetables"
-          width="640"
-          height="796"
-        />
+        <div class="wrapper-hero container">
+          <div class="hero-only-text">
+            <h1 class="hero-title">Organic vegetables to your diet today!</h1>
+            <p class="hero-descr">
+              Our expertly curated vegetable baskets are made with the freshest,
+              highest quality vegetables available. Fresh Harvest Box has got
+              you covered. Fresh, high-quality vegetables in expertly curated
+              vegetable baskets delivered to you.
+            </p>
+          </div>
+          <div class="thumb">
+            <img
+              src="./images/vegetables.jpg"
+              alt="vegetables"
+              width="640"
+              height="796"
+            />
+          </div>
+        </div>
       </section>
       <!-- #endregion hero-->
 
       <!-- #region How it works-->
       <section class="how-it-works-section">
-        <h2 id="how-it-works-title">Order vegetables</h2>
-        <img
-          src="./images/cooking.jpg"
-          alt="woman is cooking"
-          width="440"
-          height="560"
-        />
-        <h3>
-          To order your <span class="hw-blush">vegetable</span> basket, simply
-          follow these <span class="hw-blush">easy steps</span>
-        </h3>
-        <p>
-          Our baskets are assembled with care and delivered straight to your
-          doorstep, so you can enjoy the taste of fresh fruit without ever
-          leaving your home.
-        </p>
-        <ul>
-          <li>
-            <p style="color: #fbfbfb">1</p>
-            <p>
-              Just choose <span class="hw-black">the vegetable</span> you want
-              to order by clicking on the checkboxes
-              <span class="hw-black"> next to it.</span>
+        <div class="container how-it-works-wrapper">
+          <div class="how-it-works-img">
+            <h2 class="visually-hidden">Order vegetables</h2>
+            <img
+              class="how-it-works-picture"
+              src="./images/cooking.jpg"
+              alt="woman is cooking"
+              width="440"
+              height="560"
+            />
+          </div>
+          <div class="how-it-works-text">
+            <h3 id="how-it-works-title">
+              To order your <span class="hw-blush">vegetable</span> basket,
+              simply follow these <span class="hw-blush">easy steps</span>
+            </h3>
+            <p class="how-it-works-descr">
+              Our baskets are assembled with care and delivered straight to your
+              doorstep, so you can enjoy the taste of fresh fruit without ever
+              leaving your home.
             </p>
-          </li>
-          <li>
-            <p style="color: #fbfbfb">2</p>
-            <p>
-              Click on <span class="hw-black">the basket</span> and fill out the
-              form.
-            </p>
-          </li>
-          <li>
-            <p style="color: #fbfbfb">3</p>
-            <p>
-              Sit back and relax! Your
-              <span class="hw-black">fresh vegetables </span>basket will be
-              delivered.
-            </p>
-          </li>
-        </ul>
+            <ul class="how-it-works-steps-all">
+              <li class="how-it-works-steps">
+                <p class="how-it-works-count" style="color: #fbfbfb">1</p>
+                <p class="how-it-works-steps-text">
+                  Just choose <span class="hw-black">the vegetable</span> you
+                  want to order by clicking on the checkboxes
+                  <span class="hw-black"> next to it.</span>
+                </p>
+              </li>
+              <li class="how-it-works-steps">
+                <p class="how-it-works-count" style="color: #fbfbfb">2</p>
+                <p class="how-it-works-steps-text">
+                  Click on <span class="hw-black">the basket</span> and fill out
+                  the form.
+                </p>
+              </li>
+              <li class="how-it-works-steps">
+                <p class="how-it-works-count" style="color: #fbfbfb">3</p>
+                <p class="how-it-works-steps-text">
+                  Sit back and relax! Your
+                  <span class="hw-black">fresh vegetables </span>basket will be
+                  delivered.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <!-- #endregion How it works-->
 
       <!-- #region discount-->
       <section class="discount">
-        <h2>Discount</h2>
-        <p>
-          <span class="discount-text"> Discount up to 40%! </span>Taste the
-          vitamins and keep your health
-        </p>
+        <div class="container">
+          <div class="discount-page">
+            <h2>Discount</h2>
+            <p>
+              <span class="discount-text"> Discount up to 40%! </span>Taste the
+              vitamins and keep your health
+            </p>
+          </div>
+        </div>
       </section>
       <!-- #endregion discount-->
 
       <!-- #region vegetables-->
       <section class="vegetable-section">
-        <div class="vegetable-title">
-          <h2 id="vegetables">
-            Organic
-            <span class="hw-blush">
-              <br />
-              vegetables</span
-            >
-          </h2>
-          <p class="vegetable-text">
-            Our organic vegetables are hand-picked from local farms and
-            delivered straight to your <br />doorstep, ensuring that you get the
-            freshest and most nutritious produce possible.
-          </p>
-        </div>
-        <ul class="vegetable-card-conteiner">
-          <li>
-            <div class="vegetable-card">
+        <div class="container">
+          <div class="vegetable-title">
+            <h2 id="vegetables">
+              Organic
+              <span class="hw-blush">
+                <br />
+                vegetables</span
+              >
+            </h2>
+            <p class="vegetable-text">
+              Our organic vegetables are hand-picked from local farms and
+              delivered straight to your <br />doorstep, ensuring that you get
+              the freshest and most nutritious produce possible.
+            </p>
+          </div>
+          <ul class="vegetable-card-conteiner">
+            <li class="vegetable-card">
               <p class="vegetable-name">eggplant</p>
               <p class="vegetable-price">60 USD / kg</p>
               <img
@@ -148,10 +166,8 @@
                 width="280"
                 height="244"
               />
-            </div>
-          </li>
-          <li>
-            <div class="vegetable-card">
+            </li>
+            <li class="vegetable-card">
               <p class="vegetable-name">leek</p>
               <p class="vegetable-price">50 USD / kg</p>
               <img
@@ -160,10 +176,8 @@
                 width="280"
                 height="244"
               />
-            </div>
-          </li>
-          <li>
-            <div class="vegetable-card">
+            </li>
+            <li class="vegetable-card">
               <p class="vegetable-name">mushrooms</p>
               <p class="vegetable-price">40 USD / kg</p>
               <img
@@ -172,10 +186,8 @@
                 width="280"
                 height="244"
               />
-            </div>
-          </li>
-          <li>
-            <div class="vegetable-card">
+            </li>
+            <li class="vegetable-card">
               <p class="vegetable-name">corn</p>
               <p class="vegetable-price">40 USD / kg</p>
               <img
@@ -184,10 +196,8 @@
                 width="280"
                 height="244"
               />
-            </div>
-          </li>
-          <li>
-            <div class="vegetable-card">
+            </li>
+            <li class="vegetable-card">
               <p class="vegetable-name">sweet potatoes</p>
               <p class="vegetable-price">40 USD / kg</p>
               <img
@@ -196,10 +206,8 @@
                 width="280"
                 height="244"
               />
-            </div>
-          </li>
-          <li>
-            <div class="vegetable-card">
+            </li>
+            <li class="vegetable-card">
               <p class="vegetable-name">carrot</p>
               <p class="vegetable-price">40 USD / kg</p>
               <img
@@ -208,137 +216,179 @@
                 width="280"
                 height="244"
               />
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- #endregion vegetables-->
 
       <!-- #region reviews-->
       <section class="reviews-section">
-        <h2 id="reviews">
-          Reviews from our <span class="reviews-green">customers</span>
-        </h2>
-        <p class="reviews-text">
-          Words of our customers: impressions and opinions about the quality of
-          our services and the freshness of our products.
-        </p>
-        <ul>
-          <li>
-            <img
-              src="./images/Jonh_Wax.png"
-              alt="John Wax"
-              width="56"
-              height="56"
-            />
-            <h3>John Wax</h3>
-            <p>
-              These vegetables are my secret to delicious and healthy meals. The
-              quality is always at the highest level, the aroma and taste are
-              enchanting. I advise every fan of real products!
+        <div class="container">
+          <div class="reviews-section-title">
+            <h2 id="reviews">
+              Reviews from our <span class="reviews-green">customers</span>
+            </h2>
+            <p class="reviews-text">
+              Words of our customers: impressions and opinions about the quality
+              of our services and the freshness of our products.
             </p>
-          </li>
-          <li>
-            <img
-              src="./images/Victoria_Romashenko.png"
-              alt="Victoria Romashenko"
-              width="56"
-              height="56"
-            />
-            <h3>Victoria Romashenko</h3>
-            <p>
-              I love how fast and fresh the vegetables are delivered. Salads
-              always turn out so appetizing, and soups are real masterpieces.
-              The quality is impeccable!
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/Ihor_Trachuk.png"
-              alt="Ihor Trachuk"
-              width="56"
-              height="56"
-            />
-            <h3>Ihor Trachuk</h3>
-            <p>
-              Recently tried my fresh tomatoes and peppers - amazing! The
-              authenticity of the taste, as if from the garden directly to my
-              table. It is now my main vegetable supplier.
-            </p>
-          </li>
-        </ul>
+          </div>
+          <ul class="reviews-list">
+            <li class="reviews-card">
+              <img
+                class="reviews-photo"
+                src="./images/Jonh_Wax.png"
+                alt="John Wax"
+                width="56"
+                height="56"
+              />
+
+              <h3>John Wax</h3>
+              <p>
+                These vegetables are my secret to delicious and healthy meals.
+                The quality is always at the highest level, the aroma and taste
+                are enchanting. I advise every fan of real products!
+              </p>
+            </li>
+            <li class="reviews-card">
+              <img
+                class="reviews-photo"
+                src="./images/Victoria_Romashenko.png"
+                alt="Victoria Romashenko"
+                width="56"
+                height="56"
+              />
+
+              <h3>Victoria Romashenko</h3>
+              <p>
+                I love how fast and fresh the vegetables are delivered. Salads
+                always turn out so appetizing, and soups are real masterpieces.
+                The quality is impeccable!
+              </p>
+            </li>
+            <li class="reviews-card">
+              <img
+                class="reviews-photo"
+                src="./images/Ihor_Trachuk.png"
+                alt="Ihor Trachuk"
+                width="56"
+                height="56"
+              />
+
+              <h3>Ihor Trachuk</h3>
+              <p>
+                Recently tried my fresh tomatoes and peppers - amazing! The
+                authenticity of the taste, as if from the garden directly to my
+                table. It is now my main vegetable supplier.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- #endregion reviews-->
 
       <!-- #region your order-->
       <section class="order">
-        <h2>
-          Fresh <span class="hw-blush">Harvest</span> Box has got you covered
-        </h2>
-        <p>
-          Our boxes are packed with delicious, nutritious vegetables, perfect
-          for anyone looking to eat healthier or support local farmers. Order
-          your box today and start enjoying the best that nature has to offer!
-        </p>
-        <h3>
-          Ordering <span class="order-chianti">from us</span> is quick and easy!
-          Fill out <span class="reviews-green">the form</span> below and we will
-          contact you !
-        </h3>
-
-        Full Name<br />
-        Email<br />
-        Comment<br />
-
-        <button type="submit">Send</button>
+        <div class="container">
+          <div class="wrapper-order">
+            <div class="wrapper-order-title">
+              <h2>
+                Fresh <span class="hw-blush">Harvest</span> Box has got you
+                covered
+              </h2>
+              <p>
+                Our boxes are packed with delicious, nutritious vegetables,
+                perfect for anyone looking to eat healthier or support local
+                farmers. Order your box today and start enjoying the best that
+                nature has to offer!
+              </p>
+            </div>
+            <div class="wrapper-order-two-blocks">
+              <div class="wrapper-order-form">
+                <h3 class="wrapper-order-form-title">
+                  Ordering <span class="order-chianti">from us</span> is quick
+                  and easy! Fill out
+                  <span class="reviews-green">the form</span> below and we will
+                  contact you !
+                </h3>
+                Full Name<br />
+                Email<br />
+                Comment<br />
+                <button class="order-btn" type="button">Send</button>
+              </div>
+              <div class="wrapper-order-social">
+                <img
+                  class="wrapper-order-social-picture"
+                  src="./images/fresh_juice.jpg"
+                  alt="fresh_juice"
+                  width="428"
+                  height="352"
+                />
+                <div class="wrapper-order-social-list">
+                  <p class="wrapper-order-social-text">
+                    Follow us on our social networks:
+                  </p>
+                  <ul class="social-list">
+                    <li><a href="./index.html">Instagram</a></li>
+                    <li style="color: #fbfbfb">/</li>
+                    <li><a href="./index.html">Facebook</a></li>
+                    <li style="color: #fbfbfb">/</li>
+                    <li><a href="./index.html">Youtube</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- #endregion your order-->
-
-      <!-- #region social network-->
-      <section class="social">
-        <img
-          src="./images/fresh_juice.jpg"
-          alt="fresh_juice"
-          width="428"
-          height="352"
-        />
-        <p>Follow us on our social networks:</p>
-        <ul class="social-list">
-          <li><a href="./index.html">Instagram</a></li>
-          <li style="color: #fbfbfb">/</li>
-          <li><a href="./index.html">Facebook</a></li>
-          <li style="color: #fbfbfb">/</li>
-          <li><a href="./index.html">Youtube</a></li>
-        </ul>
-      </section>
-      <!-- #endregion social network-->
     </main>
     <!-- #region footer-->
     <footer>
-      <a href="./index.html">
-        <img src="./images/logo1.png" alt="logo" />
-        <img src="./images/logo2.png" alt="logo" />
-      </a>
-      <p class="footer-text">
-        Whether you're looking for a healthy snack or a thoughtful gift, our
-        fruit baskets are the perfect choice.
-      </p>
-      <ul class="footer-menu">
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#vegetables">Vegetables</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-      </ul>
-      <address class="footer-contacts">
-        +380 (68) 443-94-26<br />
-        1678 S. Pioneer Road Salt <br />
-        Lake City UT 84104
-      </address>
-      <ul class="footer-end">
-        <li>Privacy Policy</li>
-        <li>/</li>
-        <li>Cookie settings</li>
-      </ul>
-      <p class="footer-end">&#xa9;Green Harvest 2023</p>
+      <div class="container">
+        <div class="wrapper-footer-menu">
+          <div class="wrapper-footer-menu-logo">
+            <a class="title-logo" href="./index.html">
+              <img
+                class="first-part-logo"
+                src="./images/logo1.png"
+                alt="logo"
+              />
+              <img
+                class="second-part-logo"
+                src="./images/logo2.png"
+                alt="logo"
+              />
+            </a>
+            <p class="footer-text">
+              Whether you're looking for a healthy snack or a thoughtful gift,
+              our fruit baskets are the perfect choice.
+            </p>
+          </div>
+          <ul class="footer-menu">
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#vegetables">Vegetables</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+          <address class="footer-contacts">
+            <p>+380 (68) 443-94-26</p>
+            <br />
+            <p>
+              1678 S. Pioneer Road Salt <br />
+              Lake City UT 84104
+            </p>
+          </address>
+        </div>
+        <div class="wrapper-footer-end">
+          <ul class="footer-end">
+            <li>Privacy Policy</li>
+            <li>/</li>
+            <li>Cookie settings</li>
+          </ul>
+          <p class="footer-end">&#xa9;Green Harvest 2023</p>
+        </div>
+      </div>
     </footer>
     <!-- #endregion footer-->
   </body>
