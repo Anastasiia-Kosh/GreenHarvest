@@ -3,55 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="greenharvest" content="greenharvest" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenHarvest</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Roboto:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Roboto:wdth,wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>GreenHarvest</title>
   </head>
   <body>
     <!-- #region header-->
-    <header>
-      <div class="container">
-        <nav class="navigation">
-          <div class="title-navigation">
-            <div class="title-navigation-logo">
-              <a class="title-logo" href="./index.html">
-                <img
-                  class="first-part-logo"
-                  src="./images/logo1.png"
-                  alt="logo"
-                />
-                <img
-                  class="second-part-logo"
-                  src="./images/logo2.png"
-                  alt="logo"
-                />
-              </a>
-            </div>
-            <ul class="nav-menu-wrapper">
-              <li>
-                <a class="nav-menu" href="#how-it-works-title">How It Works</a>
-              </li>
-              <li><a class="nav-menu" href="#vegetables">Vegetables</a></li>
-              <li><a class="nav-menu" href="#reviews">Reviews</a></li>
-            </ul>
-
-            <button class="nav-btn" type="button">Shop now</button>
-          </div>
-        </nav>
+    <header class="page-header">
+      <div class="header-menu container">
+        <a class="title-logo" href="./index.html">
+          <svg class="icon" width="216" height="20">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="nav-and-btn">
+          <ul class="nav-menu-wrapper">
+            <li>
+              <a class="nav-menu" href="#how-it-works-title">How It Works</a>
+            </li>
+            <li><a class="nav-menu" href="#vegetables">Vegetables</a></li>
+            <li><a class="nav-menu" href="#reviews">Reviews</a></li>
+          </ul>
+          <button class="nav-btn" type="button">Shop now</button>
+        </div>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger_menu_open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- #endregion header-->
     <main>
       <!-- #region hero-->
       <section class="hero">
-        <div class="wrapper-hero container">
-          <div class="hero-only-text">
+        <div class="hero-wrap">
+          <div class="wrapper-hero container">
             <h1 class="hero-title">Organic vegetables to your diet today!</h1>
             <p class="hero-descr">
               Our expertly curated vegetable baskets are made with the freshest,
@@ -60,33 +57,39 @@
               vegetable baskets delivered to you.
             </p>
           </div>
-          <div class="thumb">
-            <img
-              src="./images/vegetables.jpg"
-              alt="vegetables"
-              width="640"
-              height="796"
-            />
-          </div>
+          <div class="hero-picture"></div>
         </div>
       </section>
       <!-- #endregion hero-->
 
       <!-- #region How it works-->
       <section class="how-it-works-section">
-        <div class="container how-it-works-wrapper">
-          <div class="how-it-works-img">
-            <h2 class="visually-hidden">Order vegetables</h2>
-            <img
-              class="how-it-works-picture"
-              src="./images/cooking.jpg"
-              alt="woman is cooking"
-              width="440"
-              height="560"
-            />
+        <h2 class="visually-hidden">Order vegetables</h2>
+        <div class="how-it-works-wrapper container">
+          <div class="how-it-works-picture-wrap">
+            <picture class="how-it-works-picture">
+              <source
+                media="(min-width: 1280px)"
+                srcset="./images/cooking_d.jpg 1x, ./images/cooking_d@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/cooking_t.jpg 1x, ./images/cooking_t@2x.jpg 2x"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/cooking_m.jpg 1x, ./images/cooking_m@2x.jpg 2x"
+              />
+              <img
+                src="./images/cooking_d.jpg"
+                alt="woman is cooking"
+                width="440"
+                height="560"
+              />
+            </picture>
           </div>
           <div class="how-it-works-text">
-            <h3 id="how-it-works-title">
+            <h3 class="how-it-works-title" id="how-it-works-title">
               To order your <span class="hw-blush">vegetable</span> basket,
               simply follow these <span class="hw-blush">easy steps</span>
             </h3>
@@ -129,9 +132,9 @@
       <section class="discount">
         <div class="container">
           <div class="discount-page">
-            <h2>Discount</h2>
-            <p>
-              <span class="discount-text"> Discount up to 40%! </span>Taste the
+            <h2 class="visually-hidden">Discount</h2>
+            <p class="discount-descr">
+              <span class="discount-text"> Discount up to 40%!</span>Taste the
               vitamins and keep your health
             </p>
           </div>
@@ -142,8 +145,8 @@
       <!-- #region vegetables-->
       <section class="vegetable-section">
         <div class="container">
-          <div class="vegetable-title">
-            <h2 id="vegetables">
+          <div class="vegetable-wrap-text">
+            <h2 class="vegetable-title" id="vegetables">
               Organic
               <span class="hw-blush">
                 <br />
@@ -160,62 +163,138 @@
             <li class="vegetable-card">
               <p class="vegetable-name">eggplant</p>
               <p class="vegetable-price">60 USD / kg</p>
-              <img
-                src="./images/eggplant.png"
-                alt="eggplant"
-                width="280"
-                height="244"
-              />
+              <picture class="vegetable-picture">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/eggplant_d.png    1x,
+                    ./images/eggplant_d@2x.png 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/eggplant_m_t.png    1x,
+                    ./images/eggplant_m_t@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/eggplant_d.png"
+                  alt="eggplant"
+                  width="280"
+                  height="244"
+                />
+              </picture>
             </li>
             <li class="vegetable-card">
               <p class="vegetable-name">leek</p>
               <p class="vegetable-price">50 USD / kg</p>
-              <img
-                src="./images/leek.png"
-                alt="leek"
-                width="280"
-                height="244"
-              />
+              <picture class="vegetable-picture">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images/leek_d.png 1x, ./images/leek_d@2x.png 2x"
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="./images/leek_m_t.png 1x, ./images/leek_m_t@2x.png 2x"
+                />
+                <img
+                  src="./images/leek_d.png"
+                  alt="leek"
+                  width="280"
+                  height="244"
+                />
+              </picture>
             </li>
             <li class="vegetable-card">
               <p class="vegetable-name">mushrooms</p>
               <p class="vegetable-price">40 USD / kg</p>
-              <img
-                src="./images/mushrooms.png"
-                alt="mushrooms"
-                width="280"
-                height="244"
-              />
+              <picture class="vegetable-picture">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/mushrooms_d.png    1x,
+                    ./images/mushrooms_d@2x.png 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/mushrooms_m_t.png    1x,
+                    ./images/mushrooms_m_t@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/mushrooms_d.png"
+                  alt="mushrooms"
+                  width="280"
+                  height="244"
+                />
+              </picture>
             </li>
             <li class="vegetable-card">
               <p class="vegetable-name">corn</p>
               <p class="vegetable-price">40 USD / kg</p>
-              <img
-                src="./images/corn.png"
-                alt="corn"
-                width="280"
-                height="244"
-              />
+              <picture class="vegetable-picture">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images/corn_d.png 1x, ./images/corn_d@2x.png 2x"
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="./images/corn_m_t.png 1x, ./images/corn_m_t@2x.png 2x"
+                />
+                <img
+                  src="./images/corn_d.png"
+                  alt="corn"
+                  width="280"
+                  height="244"
+                />
+              </picture>
             </li>
             <li class="vegetable-card">
               <p class="vegetable-name">sweet potatoes</p>
               <p class="vegetable-price">40 USD / kg</p>
-              <img
-                src="./images/sweet-potatoes.png"
-                alt="sweet potatoes"
-                width="280"
-                height="244"
-              />
+              <picture class="vegetable-picture">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/sweet-potatoes_d.png    1x,
+                    ./images/sweet-potatoes_d@2x.png 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/sweet-potatoes_m_t.png    1x,
+                    ./images/sweet-potatoes_m_t@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/sweet-potatoes_d.png"
+                  alt="sweet-potatoes"
+                  width="280"
+                  height="244"
+                />
+              </picture>
             </li>
             <li class="vegetable-card">
               <p class="vegetable-name">carrot</p>
               <p class="vegetable-price">40 USD / kg</p>
-              <img
-                src="./images/carrot.png"
-                alt="carrot"
-                width="280"
-                height="244"
-              />
+              <picture class="vegetable-picture">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images/carrot_d.png 1x, ./images/carrot_d@2x.png 2x"
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/carrot_m_t.png    1x,
+                    ./images/carrot_m_t@2x.png 2x
+                  "
+                />
+                <img src="./images/" alt="carrot" width="280" height="244" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -223,7 +302,7 @@
       <!-- #endregion vegetables-->
 
       <!-- #region reviews-->
-      <section class="reviews-section">
+      <section class="reviews-section hidden">
         <div class="container">
           <div class="reviews-section-title">
             <h2 class="reviews-section-title-main" id="reviews">
@@ -289,7 +368,7 @@
       <!-- #endregion reviews-->
 
       <!-- #region your order-->
-      <section class="order">
+      <section class="order hidden">
         <div class="container">
           <div class="wrapper-order">
             <div class="wrapper-order-title">
@@ -357,7 +436,7 @@
       <!-- #endregion your order-->
     </main>
     <!-- #region footer-->
-    <footer>
+    <footer class="hidden">
       <div class="container">
         <div class="wrapper-footer-menu">
           <div class="wrapper-footer-menu-logo">
